@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 import plotly.express as px
 import pandas as pd
 
-# ========== 页面配置 ==========
+# ========== 页面配置 ===========
 st.set_page_config(
     page_title="AI Excel智能处理器 | 企业版",
     page_icon="🤖",
