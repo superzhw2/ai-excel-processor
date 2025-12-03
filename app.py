@@ -105,15 +105,7 @@ with st.sidebar:
         }
     )
 
-# ========== 主页面内容 ==========
-if selected == "🏠 首页":
-    render_home_page()
-elif selected == "📁 文件处理":
-    render_file_processing()
-elif selected == "📊 数据分析":
-    render_data_analysis()
-else:
-    render_settings()
+
 
 
 def render_home_page():
@@ -358,7 +350,15 @@ def render_settings():
 
         # 缓存设置
         cache = st.checkbox("启用结果缓存", value=True)
-
+# ========== 主页面内容 ==========
+if selected == "🏠 首页":
+    render_home_page()
+elif selected == "📁 文件处理":
+    render_file_processing()
+elif selected == "📊 数据分析":
+    render_data_analysis()
+else:
+    render_settings()
 
 if __name__ == "__main__":
     import time
